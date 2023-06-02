@@ -1,0 +1,44 @@
+{
+  "name": "loki-frontend",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "xbrowserslist": "> 0.5%, last 2 versions, not dead",
+  "alias": {
+    "src": "./src"
+  },
+  "scripts": {
+    "start": "env PORT=1235 NODE_ENV=development parcel serve src/index.html",
+    "build": "parcel build src/index.html",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.5.0",
+    "@types/react": "^18.0.3",
+    "@types/react-dom": "^18.0.0",
+    "autoprefixer": "^10.4.4",
+    "http-proxy-middleware": "^2.0.4",
+    "parcel": "^2.4.1",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@absinthe/socket": "^0.2.1",
+    "@absinthe/socket-apollo-link": "^0.2.1",
+    "@formkit/auto-animate": "^1.0.0-beta.1",
+    "@types/phoenix": "^1.5.4",
+    "apollo-link-http": "^1.5.17",
+    "apollo-link-retry": "^2.2.16",
+    "dexie": "^3.2.2",
+    "framer-motion": "^6.5.1",
+    "phoenix": "^1.6.10",
+    "pulltorefreshjs": "^0.1.22",
+    "react": "^18.0.0",
+    "react-confetti": "^6.1.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.0.0",
+    "react-player": "^2.10.1",
+    "react-router-dom": "6"
+  }
+}

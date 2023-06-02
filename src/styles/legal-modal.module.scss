@@ -1,0 +1,87 @@
+@import './_global.scss';
+
+.legal_modal {
+  background-color: #fff;
+  text-align: left;
+  border-radius: 15px;
+  position: relative;
+  max-height: 50vh;
+  max-width: 50vw;
+  overflow: scroll;
+  font-family: DiaMono;
+
+  p {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+.inner_container {
+  padding: 30px;
+
+  p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.bullets {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.1;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.legal_container {
+  p {
+    color: #000;
+  }
+}
+
+.headline {
+  @extend %headline;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.button {
+  @extend %button;
+
+  &.disabled {
+    background-color: #eee;
+  }
+}
+
+input.checkbox[type='checkbox'] {
+  width: 30px;
+  height: 30px;
+}
+
+.accept_container {
+  position: sticky;
+  bottom: 0px;
+  background: #fff;
+  padding: 10px 30px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 15px 15px;
+
+  .input_container {
+    display: flex;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      margin-left: 15px;
+    }
+  }
+}

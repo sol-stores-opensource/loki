@@ -1,0 +1,10 @@
+@import './_global.scss';
+
+.bg {
+  @extend %modal_bg;
+  z-index: 2;
+
+  &.align_top {
+    align-items: flex-start;
+  }
+}

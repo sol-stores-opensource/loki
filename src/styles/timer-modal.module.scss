@@ -1,0 +1,22 @@
+@import './_global.scss';
+
+.timer_modal {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+
+  p {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+.headline {
+  @extend %headline;
+  margin-bottom: 20px;
+}
+
+.button {
+  @extend %button;
+}

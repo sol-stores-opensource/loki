@@ -1,0 +1,78 @@
+@import './_global.scss';
+
+$radius: 30px;
+
+.tutorial_outer {
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: calc(100vh - 60px);
+  filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.65));
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.image {
+  min-height: 590px;
+  max-height: 590px;
+  background-color: #333;
+  border-radius: $radius $radius 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tutorial_container {
+  position: relative;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20x;
+  width: 100px;
+}
+
+.top_logo {
+  display: block;
+  height: 50px;
+  margin: 0 0 0 20px;
+  background: #fff;
+  border-radius: 60px;
+  padding: 5px 20px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.play {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(21px);
+  border-radius: 51px;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.play_icon {
+  display: inline-block;
+  height: 19px;
+  width: 17px;
+  margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1407 10.9706L2.62 18.7638C1.47255 19.4245 0 18.6245 0 17.2925V1.70627C0 0.37646 1.47043 -0.42565 2.62 0.237146L16.1407 8.03028C16.4017 8.17829 16.6187 8.39225 16.7696 8.65045C16.9205 8.90865 17 9.2019 17 9.50046C17 9.79902 16.9205 10.0923 16.7696 10.3505C16.6187 10.6087 16.4017 10.8226 16.1407 10.9706V10.9706Z' fill='black'/%3E%3C/svg%3E%0A");
+}
